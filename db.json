@@ -1,0 +1,33 @@
+{
+  "workouts": [
+    {
+      "id": 1,
+      "exercise": "Bench Press",
+      "sets": 4,
+      "reps": 10,
+      "day": "Monday"
+    },
+    {
+      "id": 2,
+      "exercise": "Squats",
+      "sets": 4,
+      "reps": 12,
+      "day": "Tuesday"
+    },
+
+    {
+       "id": 3,
+      "exercise": "back-workouts",
+      "sets": 4,
+      "reps": 12,
+      "day": "Wednesday" 
+    },
+    {
+        "id": 2,
+      "exercise": "abs",
+      "sets": 4,
+      "reps": 12,
+      "day": "Thursday"
+    }
+  ]
+}
