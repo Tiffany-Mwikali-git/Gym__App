@@ -31,3 +31,49 @@
     }
   ]
 }
+
+{
+  "meals": [
+    {
+      "id": 1,
+      "day": "Monday",
+      "name": "Grilled chicken",
+      "calories": 600,
+      "protein": 40,
+      "carbs": 50,
+      "fats": 20,
+      "time": "after workout"
+    },
+     {
+      "id": 2,
+      "day": "Tuesday",
+      "name": "steak and Rice",
+      "calories": 600,
+      "protein": 40,
+      "carbs": 50,
+      "fats": 20,
+      "time": "after workout"
+    },
+     {
+      "id": 3,
+      "day": "Wednesday",
+      "name": "Chicken curry",
+      "calories": 600,
+      "protein": 40,
+      "carbs": 50,
+      "fats": 20,
+      "time": "after workout"
+    },
+     {
+      "id": 4,
+      "day": "Thursday",
+      "name": "fish and ugali",
+      "calories": 400,
+      "protein": 37,
+      "carbs": 50,
+      "fats": 10,
+      "time": "after workout"
+    }
+  ]
+}
+
