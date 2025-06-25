@@ -40,9 +40,9 @@ button {
     background: none;
 }
 
-.navbar .nav-menu .nav-link {
+/* .navbar .nav-menu .nav-link { */
 
-}
+/* } */
 
 .section-content {
     margin: 0 auto;
@@ -104,3 +104,15 @@ button {
 .main-section .main-details .button:hover {
     color: red;
 }
+.contact-section {
+    padding: 50px 0 100px;
+}
+
+.contact-section .section-content {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+    
