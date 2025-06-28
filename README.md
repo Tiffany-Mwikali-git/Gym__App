@@ -1,4 +1,4 @@
-# My Personal Blog
+# Gold Gym
 
 ## Overview
 Gold Gym is an all-in-one fitness web application that helps users view workouts, discover healthy recipes, shop for fitness products. Built with vanilla JavaScript, it offers a seamless single-page experience with persistent local storage.
