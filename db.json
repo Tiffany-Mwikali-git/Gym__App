@@ -2,73 +2,186 @@
   "workouts": [
     {
       "id": 1,
-      "exercise": "Bench Press",
-      "sets": 4,
-      "reps": 10,
-      "day": "Monday"
+      "name": "Beginner Full-Body Workout",
+      "category": "Full Body",
+      "difficulty": "Beginner",
+      "duration": "20 mins",
+      "description": "Perfect for starters! 3 sets of squats, push-ups, and lunges.",
+      "exercises": [
+        "Bodyweight Squats: 3 sets of 10 reps",
+        "Push-ups (knees or wall): 3 sets of 8 reps",
+        "Lunges: 3 sets of 8 reps per leg",
+        "Plank: 3 sets of 20 seconds"
+      ]
     },
     {
       "id": 2,
-      "exercise": "Squats",
-      "sets": 4,
-      "reps": 12,
-      "day": "Tuesday"
+      "name": "Intermediate Full-Body Burner",
+      "category": "Full Body",
+      "difficulty": "Intermediate",
+      "duration": "30 mins",
+      "description": "Challenging full-body routine with compound movements.",
+      "exercises": [
+        "Goblet Squats: 4 sets of 12 reps",
+        "Push-ups: 4 sets of 12 reps",
+        "Dumbbell Rows: 4 sets of 10 reps per arm",
+        "Jumping Lunges: 3 sets of 10 reps per leg",
+        "Plank with Shoulder Taps: 3 sets of 30 seconds"
+      ]
     },
     {
       "id": 3,
-      "exercise": "back-workouts",
-      "sets": 4,
-      "reps": 12,
-      "day": "Wednesday"
+      "name": "Advanced Total Body Circuit",
+      "category": "Full Body",
+      "difficulty": "Advanced",
+      "duration": "45 mins",
+      "description": "High-intensity circuit for experienced exercisers.",
+      "exercises": [
+        "Weighted Squats: 5 sets of 10 reps",
+        "Burpees: 4 sets of 15 reps",
+        "Pull-ups: 4 sets to failure",
+        "Dumbbell Thrusters: 4 sets of 12 reps",
+        "Mountain Climbers: 3 sets of 40 seconds"
+      ]
     },
     {
       "id": 4,
-      "exercise": "abs",
-      "sets": 4,
-      "reps": 12,
-      "day": "Thursday"
+      "name": "Beginner Core Fundamentals",
+      "category": "Core",
+      "difficulty": "Beginner",
+      "duration": "15 mins",
+      "description": "Gentle introduction to core strengthening.",
+      "exercises": [
+        "Knee Planks: 3 sets of 20 seconds",
+        "Dead Bugs: 3 sets of 10 reps per side",
+        "Seated Russian Twists: 3 sets of 12 reps",
+        "Glute Bridges: 3 sets of 12 reps"
+      ]
     }
+   
   ],
-  "meals": [
+  "nutrition": [
     {
       "id": 1,
-      "day": "Monday",
-      "name": "Grilled chicken",
-      "calories": 600,
-      "protein": 40,
-      "carbs": 50,
-      "fats": 20,
-      "time": "after workout"
+      "image": "https://cdn.shopify.com/s/files/1/1283/2557/files/Best_Foods_To_Keep_You_Lean_And_Gain_Muscle_grande.jpg?v=1517876551",
+      "name": "Muscle-Building Breakfast",
+      "category": "High Protein",
+      "calories": 450,
+      "ingredients": [
+        "3 Eggs",
+        "1/2 Avocado",
+        "1 slice Whole Grain Toast",
+        "1 cup Spinach",
+        "1 tbsp Olive Oil"
+      ],
+      "prepTime": "10 mins",
+      "macros": "35g protein | 25g carbs | 22g fat"
     },
     {
       "id": 2,
-      "day": "Tuesday",
-      "name": "steak and Rice",
-      "calories": 600,
-      "protein": 40,
-      "carbs": 50,
-      "fats": 20,
-      "time": "after workout"
+      "image":"https://assets.sweat.com/shopify_articles/images/000/001/082/original/Tropical_Green_Machine_Smoothie_en3a6a3a83fa2bb5160c0a71468e7a59893a6a3a83fa2bb5160c0a71468e7a5989.jpg?1581640235",
+      "name": "Post-Workout Recovery Smoothie",
+      "category": "Recovery",
+      "calories": 320,
+      "ingredients": [
+        "1 Banana",
+        "1 scoop Whey Protein",
+        "1 cup Almond Milk",
+        "1 tbsp Peanut Butter",
+        "1/2 cup Greek Yogurt"
+      ],
+      "prepTime": "5 mins",
+      "macros": "30g protein | 35g carbs | 8g fat"
     },
     {
       "id": 3,
-      "day": "Wednesday",
-      "name": "Chicken curry",
-      "calories": 600,
-      "protein": 40,
-      "carbs": 50,
-      "fats": 20,
-      "time": "after workout"
+      "image": "https://www.eatingwell.com/thmb/Z5OeH3EbbtDb7NmNQBCMdAjjFU8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5238634-81139e2ee375421cad981c46307e9c6b.jpg",
+      "name": "Lean Lunch Bowl",
+      "category": "Balanced",
+      "calories": 400,
+      "ingredients": [
+        "4 oz Grilled Chicken",
+        "1/2 cup Quinoa",
+        "1 cup Mixed Greens",
+        "1/4 cup Chickpeas",
+        "1 tbsp Balsamic Dressing"
+      ],
+      "prepTime": "15 mins",
+      "macros": "35g protein | 40g carbs | 10g fat"
     },
     {
       "id": 4,
-      "day": "Thursday",
-      "name": "fish and ugali",
-      "calories": 400,
-      "protein": 37,
-      "carbs": 50,
-      "fats": 10,
-      "time": "after workout"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2022/04/Cinnamon-berry-granola-bars-4694d38.jpg",
+      "name": "Energy-Boosting Snack",
+      "category": "Pre-Workout",
+      "calories": 200,
+      "ingredients": [
+        "1 Apple",
+        "1 tbsp Almond Butter",
+        "1/4 cup Granola",
+        "1 tsp Chia Seeds"
+      ],
+      "prepTime": "2 mins",
+      "macros": "5g protein | 30g carbs | 8g fat"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Compression Training Leggings",
+      "category": "Bottoms",
+      "price": 49.99,
+      "image": "https://www.firmabs.com/cdn/shop/files/01_8651f86c-4ffe-4a85-a874-0fc56b3b405d.jpg?v=1706078288&width=1000",
+      "features": [
+        "Sweat-wicking fabric",
+        "4-way stretch",
+        "Hidden pocket",
+        "High-waist support"
+      ],
+      "colors": ["Black", "Navy", "Burgundy"]
+    },
+    {
+      "id": 2,
+      "name": "High-Support Sports Bra",
+      "category": "Tops",
+      "price": 39.99,
+      "image": "https://m.media-amazon.com/images/I/710op-PZrkL._AC_SL1500_.jpg",
+      "features": [
+        "Racerback design",
+        "Breathable mesh panels",
+        "Adjustable straps",
+        "Moisture-wicking"
+      ],
+      "colors": ["White", "Gray", "Pink"]
+    },
+    {
+      "id": 3,
+      "name": "Training Gloves",
+      "category": "Accessories",
+      "price": 24.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADVhPHABlsA_kX1NiDKpycYc5vL6OwY4ztg&s",
+      "features": [
+        "Padded palms",
+        "Breathable fabric",
+        "Wrist support",
+        "Grip enhancement"
+      ],
+      "colors": ["Black", "Gray"]
+    },
+    {
+      "id": 4,
+      "name": "Hydration Fitness Belt",
+      "category": "Accessories",
+      "price": 29.99,
+      "image": "https://www.robertdyas.co.uk/media/catalog/product/2/4/249688_4_.jpg?quality=80&bg-color=255,255,255&height=1200&width=1200&canvas=1200:1200",
+      "features": [
+        "Holds 2 water bottles",
+        "Zippered pocket",
+        "Adjustable fit",
+        "Lightweight material"
+      ],
+      "colors": ["Black", "Blue"]
+    }
+   
   ]
 }
