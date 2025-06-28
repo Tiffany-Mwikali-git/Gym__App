@@ -4,14 +4,15 @@ const nutritionContainer = document.getElementById("nutritionContainer");
 const productList = document.getElementById("productList");
 const productDetails = document.getElementById("productDetails");
 
-// API base URL
+// Updated API base URL
 const API_BASE = "https://gym-server-y6c1.onrender.com";
 
-// Fetch all data initially
+// Store fetched data
 let workouts = [];
 let nutrition = [];
 let products = [];
 
+// Generic data fetcher
 async function fetchData() {
   try {
     const [workoutsRes, nutritionRes, productsRes] = await Promise.all([
@@ -24,7 +25,7 @@ async function fetchData() {
     nutrition = await nutritionRes.json();
     products = await productsRes.json();
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error("Failed to fetch data:", error);
   }
 }
 
