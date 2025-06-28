@@ -18,7 +18,7 @@ async function fetchData() {
     const [workoutsRes, nutritionRes, productsRes] = await Promise.all([
       fetch(`${API_BASE}/workouts`),
       fetch(`${API_BASE}/nutrition`),
-      fetch(`${API_BASE}/products`)
+      fetch(`${API_BASE}/products`),
     ]);
 
     workouts = await workoutsRes.json();
@@ -30,7 +30,7 @@ async function fetchData() {
 }
 
 // Event Listener 1: Show Beginner Workouts
-document.getElementById("showBeginnerWorkouts").addEventListener("click", async () => {
+document.addEventListener("DOMContentLoaded", async () => {
   if (!workouts.length) await fetchData();
 
   const beginners = workouts.filter(w => w.difficulty === "Beginner");
@@ -88,3 +88,29 @@ productList.addEventListener("click", async (e) => {
     `;
   }
 });
+
+  // Get form and elements
+    const form = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+
+    // Event listener for form submission
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Extract form values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Here, you could do something with the form data (e.g., send it to a server)
+      console.log("Form Submitted!");
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Message:", message);
+
+      // Display confirmation message
+      formStatus.style.display = "block";
+
+      // Clear the form after submission
+      form.reset();
+    })
