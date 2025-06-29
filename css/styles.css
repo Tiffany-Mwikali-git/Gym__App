@@ -48,7 +48,7 @@ button {
     margin: 0 auto;
     padding: 0 50px;
     max-width: var(--site-max-width);
-    min-height: 50vh;
+    min-height: 30vh;
     align-items: center;
 }
 

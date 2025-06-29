@@ -4,15 +4,15 @@ const nutritionContainer = document.getElementById("nutritionContainer");
 const productList = document.getElementById("productList");
 const productDetails = document.getElementById("productDetails");
 
-// Updated API base URL
+
 const API_BASE = "https://gym-server-y6c1.onrender.com";
 
-// Store fetched data
+
 let workouts = [];
 let nutrition = [];
 let products = [];
 
-// Generic data fetcher
+
 async function fetchData() {
   try {
     const [workoutsRes, nutritionRes, productsRes] = await Promise.all([
@@ -29,7 +29,7 @@ async function fetchData() {
   }
 }
 
-// Event Listener 1: Show Beginner Workouts
+// 1: Event Listener DOMContentLoaded
 document.addEventListener("DOMContentLoaded", async () => {
   if (!workouts.length) await fetchData();
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 });
 
-// Event Listener 2: Filter Nutrition by Category
+// 2: Event Listener change
 nutritionSelect.addEventListener("change", async (e) => {
   if (!nutrition.length) await fetchData();
 
@@ -71,7 +71,7 @@ nutritionSelect.addEventListener("change", async (e) => {
   });
 });
 
-// Event Listener 3: Show Product Details on Click
+// 3: Event Listener click
 productList.addEventListener("click", async (e) => {
   const id = parseInt(e.target.dataset.id);
   if (!products.length) await fetchData();
@@ -95,22 +95,16 @@ productList.addEventListener("click", async (e) => {
 
     // Event listener for form submission
     form.addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent the default form submission behavior
+      event.preventDefault(); 
 
-      // Extract form values
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
 
-      // Here, you could do something with the form data (e.g., send it to a server)
       console.log("Form Submitted!");
       console.log("Name:", name);
       console.log("Email:", email);
       console.log("Message:", message);
-
-      // Display confirmation message
       formStatus.style.display = "block";
-
-      // Clear the form after submission
       form.reset();
     })
