@@ -25,7 +25,7 @@ Gold Gym is an all-in-one fitness web application that helps users view workouts
 -A modern web browser
 
 ### view live site
- Visit the deployed application at: https://simple-blog-4owk.onrender.com
+ Visit the deployed application at: https://gym-app-k4si.onrender.com
 
 ### How to Use
 - use a competer
